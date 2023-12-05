@@ -1,8 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { summReducer } from './summSlice';
+import { persistedContactsReducer } from './contactsSlice';
 
 export const store = configureStore({
   reducer: {
-    summ: summReducer,
+    contacts: persistedContactsReducer,
+    // filter: '',
   },
 });

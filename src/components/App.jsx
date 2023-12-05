@@ -1,5 +1,6 @@
-import { Buttons } from './Buttons/Buttons';
-import { Result } from './result/result';
+import { Contacts } from './Contacts/Contacts';
+import { Filter } from './Filter/Filter';
+import { PhoneBook } from './PhoneBook/PhoneBook';
 
 export const App = () => {
   return (
@@ -13,8 +14,11 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <Buttons />
-      <Result />
+      <h1>Phone Book</h1>
+      <PhoneBook />
+      <h2>Contacts</h2>
+      <Filter />
+      <Contacts />
     </div>
   );
 };
